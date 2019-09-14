@@ -20,6 +20,10 @@
       - plan: 計画の項目
       - event: イベント
       - 図の計画の矢印はplan.jsonに書いた順番に下から描画されるので書く順番は適当に変えてください．
+    - matplotlibの日本語対応
+      - matplotlibは日本語に対応させておいてください．豆腐が出ます．
+      - 参考
+        - https://qiita.com/yniji/items/3fac25c2ffa316990d0c
   - 実行
     - python make_plan.py
   - 保存
