@@ -1,0 +1,15 @@
+{
+    "range":{
+        "start": "YYYY-MM-DD",
+        "end": "YYYY-MM-DD"
+    },
+    "plan1":{
+        "title": "PLAN_TITLE",
+        "start": "YYYY-MM-DD",
+        "end": "YYYY-MM-DD"
+    },
+    "event1":{
+        "title": "EVENT_TITLE",
+        "date": "YYYY-MM-DD"
+    }
+}
