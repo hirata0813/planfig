@@ -25,6 +25,7 @@
       - matplotlibは日本語に対応させておいてください．豆腐が出ます．
       - 参考
         - https://qiita.com/yniji/items/3fac25c2ffa316990d0c
+        - https://qiita.com/maroKanatani/items/3b080c639395bba7795a
   - 実行
     - python make_plan.py
   - 保存
