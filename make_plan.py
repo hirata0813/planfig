@@ -17,7 +17,7 @@ def make_arrow(text, start, end, y):
     end_point = [end, y]
 
     plt.annotate('', xy=end_point, xytext=start_point,
-                    arrowprops=dict(shrink=0, width=0.5, headwidth=4, 
+                    arrowprops=dict(shrink=0, width=0.5, headwidth=4,
                                     headlength=4, connectionstyle='arc3',
                                     facecolor='k', edgecolor='k')
                     )
@@ -29,7 +29,7 @@ def make_arrow(text, start, end, y):
 y_max = 100
 
 # jsonファイルの読み込み
-f = open('plan.json', 'r')
+f = open('plan.json', 'rb')
 
 # jsonを辞書に変換
 plan_dict = json.load(f)
@@ -42,7 +42,7 @@ end_range = datetime.strptime(plan_dict['range']['end'], '%Y-%m-%d').date()
 y = 10
 
 # 計画のプロット
-for p in plan_dict: 
+for p in plan_dict:
     if 'plan' in p:
         plan_title = plan_dict[p]['title']
         plan_start = datetime.strptime(plan_dict[p]['start'], '%Y-%m-%d').date()
@@ -77,7 +77,7 @@ for d in daterange(start_range, end_range):
         plt.text(d + timedelta(last_day[d.month] // 2), -(y_max * 0.07), '{}月'.format(d.month), size=13, ha='center')
 
 # イベントのプロット
-for p in plan_dict: 
+for p in plan_dict:
     if 'event' in p:
         event_title = plan_dict[p]['title']
         event_date = datetime.strptime(plan_dict[p]['date'], '%Y-%m-%d').date()
