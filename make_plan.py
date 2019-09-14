@@ -68,11 +68,13 @@ date_offset = timedelta(7)
 # x軸の範囲
 plt.xlim(start_range - date_offset, end_range + date_offset*3)
 
+last_day = [0, 31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31]
+
 # 範囲内のx月のラベルと点線
 for d in daterange(start_range, end_range):
     if d.day == 1:
         plt.plot([d, d], [-y_max * 0.1,y_max], ls=":", lw=1.0, color="k")
-        plt.text(d + timedelta(12), -(y_max * 0.07), '{}月'.format(d.month), size=13)
+        plt.text(d + timedelta(last_day[d.month] // 2), -(y_max * 0.07), '{}月'.format(d.month), size=13, ha='center')
 
 # イベントのプロット
 for p in plan_dict: 
