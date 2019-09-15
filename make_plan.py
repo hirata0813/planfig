@@ -26,7 +26,7 @@ def make_arrow(text, start, end, y):
     t.set_bbox(dict(facecolor='white', alpha=1, edgecolor='white'))
 
 # y座標上限の初期値
-y_max = 100
+y_max = 50
 
 # jsonファイルの読み込み
 f = open('plan.json', 'rb')
