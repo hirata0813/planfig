@@ -1,32 +1,39 @@
 {
     "range":{
+        "type": "range",
         "start": "2019-08-10",
         "end": "2020-04-01"
     },
     "plan1":{
+        "type": "plan",
         "title": "live study",
         "start": "2019-08-14",
         "end": "2019-09-03"
     },
     "plan2":{
+        "type": "plan",
         "title": "live study",
         "start": "2019-9-14",
         "end": "2019-11-09"
     },
     "plan3":{
+        "type": "plan",
         "title": "live study",
         "start": "2019-11-24",
         "end": "2020-02-15"
     },
     "event1":{
+        "type": "event",
         "title": "7th LIVE\nMAKUHARI",
         "date": "2019-09-03"
     },
     "event2":{
+        "type": "event",
         "title": "7th LIVE\nNAGOYA",
         "date": "2019-11-09"
     },
     "event3":{
+        "type": "event",
         "title": "7th LIVE\nOSAKA",
         "date": "2020-02-15"
     }

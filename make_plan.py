@@ -43,7 +43,7 @@ y = 10
 
 # 計画のプロット
 for p in plan_dict:
-    if 'plan' in p:
+    if plan_dict[p]['type'] == 'plan':
         plan_title = plan_dict[p]['title']
         plan_start = datetime.strptime(plan_dict[p]['start'], '%Y-%m-%d').date()
         plan_end = datetime.strptime(plan_dict[p]['end'], '%Y-%m-%d').date()
@@ -78,7 +78,7 @@ for d in daterange(start_range, end_range):
 
 # イベントのプロット
 for p in plan_dict:
-    if 'event' in p:
+    if plan_dict[p]['type'] == 'event':
         event_title = plan_dict[p]['title']
         event_date = datetime.strptime(plan_dict[p]['date'], '%Y-%m-%d').date()
 
