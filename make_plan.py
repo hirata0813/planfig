@@ -42,7 +42,7 @@ end_range = datetime.strptime(plan_dict['range']['end'], '%Y-%m-%d').date()
 y = 10
 
 # 計画のプロット
-for p in plan_dict:
+for p in reversed(list(plan_dict.keys())):
     if plan_dict[p]['type'] == 'plan':
         plan_title = plan_dict[p]['title']
         plan_start = datetime.strptime(plan_dict[p]['start'], '%Y-%m-%d').date()
