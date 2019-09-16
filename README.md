@@ -15,18 +15,19 @@
   - setting.py : 軸の設定．インポート用．
 - 使い方
   - 準備
-    - テンプレートやサンプルをもとにplan.jsonを作る．
+    - テンプレートやサンプルをもとにjsonファイルを作る．
       - range: 図に描画する範囲(x軸のもとになる)
       - plan: 計画の項目
       - event: イベント
       - 計画の項目とイベントのキーの名前は任意です．
-      - 図の計画の矢印はplan.jsonに書いた順番に上から描画されます．
+      - 図の計画の矢印はjsonファイルに書いた順番に上から描画されます．
     - matplotlibの日本語対応
       - matplotlibは日本語に対応させておいてください．豆腐が出ます．
       - 参考
         - https://qiita.com/yniji/items/3fac25c2ffa316990d0c
         - https://qiita.com/maroKanatani/items/3b080c639395bba7795a
   - 実行
-    - python make_plan.py
+    - python make_plan.py [filename]
+      - [filename]にjsonファイルのパスを書く．
   - 保存
     - 実行するとプロットしたグラフが出るのでウィンドウの大きさをいい感じに変更して保存ボタンで保存する．
