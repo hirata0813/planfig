@@ -2,6 +2,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 from datetime import datetime
 from datetime import timedelta
+import sys
 import json
 
 import setting
@@ -28,8 +29,14 @@ def make_arrow(text, start, end, y):
 # y座標上限の初期値
 y_max = 50
 
+if len(sys.argv) >= 2:
+    filename = sys.argv[1]
+else:
+    print('Usage: python {} [filename]'.format(sys.argv[0]))
+    sys.exit(0)
+
 # jsonファイルの読み込み
-f = open('plan.json', 'rb')
+f = open(filename, 'rb')
 
 # jsonを辞書に変換
 plan_dict = json.load(f)
