@@ -1,4 +1,6 @@
 import matplotlib.pyplot as plt
+# 追加部分 フォントを指定する。
+plt.rcParams["font.family"] = "IPAexGothic"
 
 plt.tick_params(labelbottom=False,
                 labelleft=False,
